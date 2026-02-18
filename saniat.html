@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon CV en ligne</title>
+    <link rel="stylesheet" href="saniat.css">
+</head>
+<body>
+    <style>* { box-sizing: border-box; margin: 0; padding: 0; font-family: Arial, sans-serif; }
+
+body { background-color: #f0f0f0; display: flex; justify-content: center; padding: 20px; }
+
+.cv-container { 
+    display: flex; 
+    width: 800px; 
+    background: white; 
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); 
+}
+
+/* Sidebar Bleue */
+.sidebar { 
+    width: 30%; 
+    background-color: #e6f0ff; /* Bleu très clair comme sur l'image */
+    padding: 30px 20px; 
+}
+
+.profile-pic img { 
+    width: 120px; height: 120px; 
+    border-radius: 50%; 
+    object-fit: cover; 
+    display: block; margin: 0 auto 20px;
+}
+
+.sidebar h3 { font-size: 14px; margin: 20px 0 10px; color: #333; border-bottom: 1px solid #ccc; }
+.sidebar p { font-size: 12px; margin-bottom: 5px; color: #555; }
+
+/* Barres de progression */
+.skill-item { margin-bottom: 10px; font-size: 12px; }
+.progress-bar { width: 100%; height: 8px; background: #ddd; border-radius: 4px; margin-top: 5px; }
+.fill { height: 100%; background: #555; border-radius: 4px; }
+
+/* Contenu Principal */
+.main-content { width: 70%; padding: 40px; }
+header h1 { font-size: 28px; color: #333; }
+header h2 { font-size: 18px; color: #888; margin-bottom: 30px; font-weight: normal; }
+
+.content-section { margin-bottom: 30px; }
+.content-section h3 { border-bottom: 2px solid #eee; padding-bottom: 5px; margin-bottom: 15px; font-size: 16px; }
+
+.item { display: flex; margin-bottom: 15px; }
+.date { width: 80px; font-size: 12px; color: #888; }
+.details strong { display: block; font-size: 14px; }
+.details p { font-size: 13px; color: #666; }
+
+ul { margin-left: 20px; font-size: 13px; color: #444; }
+</style>
+    <div class="cv-container">
+        <!-- Marge Gauche (Bleue) -->
+        <aside class="sidebar">
+            <div class="profile-pic">
+                <img src="saniat.jpg" alt="Photo de profil">
+            </div>
+            
+            <section class="info-section">
+                <h3>CONTACT</h3>
+                <p>📞 0333671616</p>
+                <p>📧 saniatselmanne@gmail.com</p>
+                <p>📍 Fianarantsoa,Madagascar</p>
+                <p>🪪 CIN: 123 456 789 012</p>
+                <p>👨‍👩‍👦 Père: RAZAFINDRAKOTO Arifenomanana</p>
+                <p>👩‍👦 Mère: NASOLOVAVY Adollynne Selyanah</p>
+            </section>
+
+            <section class="skills-section">
+                <h3>LANGUES</h3>
+                <div class="skill-item">
+                    <span>Malagasy </span>
+                    <div class="progress-bar"><div class="fill" style="width: 98%;"></div></div>
+                </div>
+                <div class="skill-item">
+                    <span>Anglais </span>
+                    <div class="progress-bar"><div class="fill" style="width: 50%;"></div></div>
+                </div>
+                <div class="skill-item">
+                    <span>Français </span>
+                    <div class="progress-bar"><div class="fill" style="width: 22%;"></div></div>
+                </div>
+            </section>
+
+            <section class="hobbies-section">
+                <h3>SPORTS ET LOISIRS</h3>
+                <p>Football</p> <p>Musique</p><p> Lecture</p>
+            </section>
+        </aside>
+
+        <!-- Contenu Principal (Blanc) -->
+        <main class="main-content">
+            <header>
+                <h1>NIRINAVAVITIANA Saniat Selmanne</h1>
+                <h2>L1 DA2I à L'EMIT</h2>
+            </header>
+
+            <section class="content-section">
+                <h3>DIPLÔMES</h3>
+                <div class="item">
+                    <span class="date">2024-2025</span>
+                    <div class="details">
+                        <strong>Baccalauréat</strong>
+                        <p>Lycée Sacré Coeur, Série D</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <span class="date">2021-2022</span>
+                    <div class="details">
+                        <strong>BEPC</strong>
+                        <p>College saint vincent de paul</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <span class="date">2017-2018</span>
+                    <div class="details">
+                        <strong>CEPE</strong>
+                        <p>College saint vincent de paul</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="content-section">
+                <h3>COMPÉTENCES PROFESSIONNELLES</h3>
+                <ul>
+                    <li>Maîtrise de l'outil informatique</li>
+                    <li>Gestion de projet</li>
+                    <li>Vente et négociation</li>
+                </ul>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
